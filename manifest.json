@@ -1,0 +1,34 @@
+{
+  "name": "cortex-plugin-travel-concierge",
+  "version": "1.0.0",
+  "description": "Flight & Travel Concierge — Google Flights/Skyscanner/Booking.com search with itinerary building and price monitoring",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-travel-concierge",
+  "homepage": "https://cortexprism.io/marketplace/plugins/travel-concierge",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "travel_search_flights", "description": "Search flights with filters", "params": [] },
+    {
+      "name": "travel_search_hotels",
+      "description": "Search hotels and accommodations",
+      "params": []
+    },
+    {
+      "name": "travel_build_itinerary",
+      "description": "Build multi-stop travel itinerary",
+      "params": []
+    },
+    {
+      "name": "travel_monitor_price",
+      "description": "Monitor price changes and alert",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
